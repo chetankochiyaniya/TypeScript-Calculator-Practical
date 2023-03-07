@@ -327,19 +327,19 @@ function e_pow_x() {
 let f = 1;
 function change_btn() {
     if (f) {
-        for (let element of document.getElementsByClassName('btn1-show')) {
+        for (let element of <any> document.getElementsByClassName('btn1-show')) {
             (element as HTMLButtonElement).style.display = "none";
         }
-        for (let element of document.getElementsByClassName('btn2-show')) {
+        for (let element of <any> document.getElementsByClassName('btn2-show')) {
             (element as HTMLButtonElement).style.display = "inline-block";
         }
         f = 0;
     }
     else {
-        for (let element of document.getElementsByClassName('btn2-show')) {
+        for (let element of <any> document.getElementsByClassName('btn2-show')) {
             (element as HTMLButtonElement).style.display = "none";
         }
-        for (let element of document.getElementsByClassName('btn1-show')) {
+        for (let element of <any> document.getElementsByClassName('btn1-show') ) {
             (element as HTMLButtonElement).style.display = "inline-block";
         }
         f = 1;
