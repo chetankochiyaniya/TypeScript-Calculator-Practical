@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
-    "lib": ["es6", "dom", "es2017", "es2016","ES2016.Array.Include"],
-    "target": "ES2019",
-    "module": "ESNext",
-    "moduleResolution": "node"
+    "target": "ES6",
+    "module": "ES2015",
   }
 }
